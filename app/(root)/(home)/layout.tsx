@@ -1,11 +1,12 @@
+import NavBar from '@/components/navBar';
 import Sidebar from '@/components/sidebar';
 import React, { ReactNode } from 'react'
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <main>
-      <div className='flex flex-col'>
-        Navbar
+    <main className='text-white'>
+      <div className=''>
+        <NavBar />
       </div>
       <div className='flex'>
         <div className='w-64 h-screen bg-gray-800 text-white'>
